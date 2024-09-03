@@ -16,8 +16,8 @@ export default function Header() {
             </Link>
           </li>
           <li>
-            <Link href="/modpacks" aria-label="Modpacks">
-              Modpacks
+            <Link href="/projects" aria-label="Projects">
+              Projects
             </Link>
           </li>
           <li>
