@@ -2,11 +2,12 @@ import Head from "next/head";
 
 export default function Music() {
   return (
-    <div>
+    <div className="music-page-container">
       <Head>
         <title>BigChadGuys | Music</title>
       </Head>
-      Music
+      <h1 className="page-title">MUSIC</h1>
+      <p></p>
     </div>
   );
 }

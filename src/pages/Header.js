@@ -1,38 +1,33 @@
 import Link from "next/link";
 
-export default function Header() {
+export default function Header({ poppins, syne }) {
   return (
-    <header className="header">
+    <header className={poppins.className}>
       <nav>
         <ul>
           <li>
-            <Link href="/" aria-label="Home">
-              Home
+            <Link href="/" aria-label="home">
+              home
             </Link>
           </li>
           <li>
-            <Link href="/about" aria-label="About">
-              About
+            <Link href="/about" aria-label="about">
+              about
             </Link>
           </li>
           <li>
-            <Link href="/projects" aria-label="Projects">
-              Projects
+            <Link href="/projects" aria-label="projects">
+              projects
             </Link>
           </li>
           <li>
-            <Link href="/music" aria-label="Music">
-              Music
+            <Link href="/music" aria-label="music">
+              music
             </Link>
           </li>
           <li>
-            <Link href="/social" aria-label="Social">
-              Social
-            </Link>
-          </li>
-          <li>
-            <Link href="/find-a-server" aria-label="Find a Server">
-              Find a Server
+            <Link href="/find-a-server" aria-label="find a server">
+              find a server
             </Link>
           </li>
         </ul>

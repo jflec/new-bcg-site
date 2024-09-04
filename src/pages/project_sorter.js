@@ -7,7 +7,6 @@ const ProjectSorter = ({ projects }) => {
 
   const handleSort = (type) => {
     setActiveButton(type);
-    console.log(activeButton);
     if (type === "all") {
       setFilteredProjects(projects);
     } else {
@@ -61,6 +60,7 @@ const ProjectSorter = ({ projects }) => {
               <a href={project.url} target="_blank" rel="noopener noreferrer">
                 <h1>{project.title}</h1>
               </a>
+              <p>{project.type}</p>
               <p>{project.summary}</p>
               <p>{project.description}</p>
             </div>

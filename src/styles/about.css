@@ -1,0 +1,20 @@
+.about-page-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.about-content {
+  background-color: white;
+  color: rgb(30, 30, 30);
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  width: 60%;
+  padding: 2rem;
+  border-radius: 1rem;
+  line-height: 2rem;
+}
