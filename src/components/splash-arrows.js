@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
-import SplashTile from "./splash-tile";
-import { motion, AnimatePresence } from "framer-motion";
+import SplashTile from "../components/splash-tile";
 import { BsCaretLeft, BsCaretRight } from "react-icons/bs";
 
 export default function SplashArrows({ poppins }) {
@@ -58,19 +57,11 @@ export default function SplashArrows({ poppins }) {
 
   return (
     <div className="splash-arrows-container">
-      <motion.div
+      <SplashTile
+        project={projectArray[currentIndex]}
         key={currentIndex}
-        initial={{ opacity: 0, x: 100 }}
-        animate={{ opacity: 1, x: 0 }}
-        exit={{ opacity: 0, x: -100 }}
-        transition={{ duration: 0.5, ease: "easeInOut" }}
-      >
-        <SplashTile
-          project={projectArray[currentIndex]}
-          key={currentIndex}
-          poppins={poppins}
-        />
-      </motion.div>
+        poppins={poppins}
+      />
       <div className="arrows-container">
         <BsCaretLeft className="arrow-button" onClick={goToPrevious} />
         <div className="carousel-dots">

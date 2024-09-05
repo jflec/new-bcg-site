@@ -1,8 +1,8 @@
 import Head from "next/head";
 
-export default function About() {
+export default function About({ poppins, syne }) {
   return (
-    <div className="about-page-container">
+    <div className={`about-page-container ${poppins.className}`}>
       <Head>
         <title>BigChadGuys | About</title>
         <meta
@@ -10,7 +10,7 @@ export default function About() {
           content="Learn about Joe, a fullstack software engineer turned Minecraft modpack developer and aspiring pixel artist. Discover his journey from Roblox to BigChadGuys Plus."
         />
       </Head>
-      <h1 className="page-title">ABOUT</h1>
+      <h1 className={`page-title ${syne.className}`}>ABOUT</h1>
       <section className="about-content">
         <p className="about-text">
           Hey there! I’m Joe, a 23-year-old fullstack software engineer who’s

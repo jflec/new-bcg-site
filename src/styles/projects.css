@@ -1,4 +1,9 @@
 .projects-full-page {
+  width: 100vw;
+  height: 100vh;
+  max-width: 100%;
+  max-height: 100%;
+  background-color: rgb(112, 177, 137);
 }
 
 .projects-page-container {

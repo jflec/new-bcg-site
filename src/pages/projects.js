@@ -1,7 +1,7 @@
 import Head from "next/head";
-import ProjectSorter from "./project_sorter";
+import ProjectSorter from "../components/project_sorter";
 
-export default function Modpacks() {
+export default function Modpacks({ poppins, syne }) {
   const projectArray = [
     {
       type: "modpack",
@@ -101,7 +101,7 @@ export default function Modpacks() {
   ];
 
   return (
-    <div className="projects-full-page">
+    <div className={`projects-full-page + ${poppins.className}`}>
       <Head>
         <title>BigChadGuys | Projects</title>
       </Head>

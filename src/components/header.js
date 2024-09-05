@@ -26,8 +26,8 @@ export default function Header({ poppins, syne }) {
             </Link>
           </li>
           <li>
-            <Link href="/find-a-server" aria-label="find a server">
-              find a server
+            <Link href="/community" aria-label="community">
+              community
             </Link>
           </li>
         </ul>
